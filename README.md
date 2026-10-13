@@ -11,8 +11,8 @@
 ## 2. Các liên kết nộp bài (Bắt buộc)
 | STT | Hạng mục | Liên kết |
 |:---:|---|---|
-| 1 | **Bản thiết kế Canva** | https://canva.link/xfdcwhmfzpvs0tq
-| 2 | **GitHub Repository** | https://github.com/dth0209/BTGK-CSE122-67CNTT1
+| 1 | **Bản thiết kế Canva** | https://canva.link/skex779s41pf0zo
+| 2 | **GitHub Repository** | https://github.com/dth0209/BTGiuaKy
 | 3 | **Video thuyết minh (03 phút)** | [Xem Video Youtube/Drive](https://...) |
 
 > **Quy chuẩn tên video:** `CSE122-GK-SV20-Đặng Trung Hiếu-AdminReviewDashboard`
