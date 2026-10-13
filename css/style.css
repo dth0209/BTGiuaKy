@@ -11,7 +11,6 @@
   padding: 20px;
 }
 
-/* ĐẦU TRANG */
 .dautrang {
   display: flex;
   justify-content: space-between;
@@ -28,7 +27,6 @@
   cursor: pointer; 
 }
 
-/* THỐNG KÊ & KHUNG NỘI DUNG */
 .hangthongke {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -62,7 +60,6 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
-/* MÀU CHỮ SỐ LIỆU */
 .socam {
   color: #f97316;
 }
@@ -83,7 +80,6 @@
   color: #ef4444;
 }
 
-/* THAO TÁC NHANH */
 .hangthaotac {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -118,7 +114,6 @@
   background-color: #eff6ff;
 }
 
-/* DANH SÁCH BÀI VIẾT */
 .dongbaiviet {
   display: flex;
   align-items: center;
@@ -149,7 +144,6 @@
   color: #64748b;
 }
 
-/* NÚT THAO TÁC */
 .nhomnut button {
   padding: 6px 14px;
   border: none;
@@ -175,7 +169,6 @@
   color: #e11d48;
 }
 
-/* NHÃN TRẠNG THÁI */
 .thetrangthai {
   padding: 4px 12px;
   border-radius: 20px;
@@ -220,7 +213,6 @@
   margin-top: 0;
 }
 
-/* NÚT TIN NHẮN NỔI */
 .nutnhantinnoi {
   position: fixed;
   bottom: 24px;
@@ -236,7 +228,6 @@
   box-shadow: 0 4px 12px rgba(0, 168, 107, 0.35);
 }
 
-/* THANH THÔNG BÁO NỔI Ở ĐÁY MÀN HÌNH (ẢNH 5) */
 .thongbaoduyet {
   position: fixed;
   bottom: 26px;
@@ -259,7 +250,6 @@
   font-size: 16px;
 }
 
-/* LỚP NỀN TỐI MỜ (BACKDROP THEO ẢNH 6) */
 .lopmonen {
   position: fixed;
   top: 0;
@@ -274,7 +264,6 @@
   z-index: 1000;
 }
 
-/* HỘP THOẠI TỪ CHỐI (CHUẨN 100% THEO ẢNH 6) */
 .hopthoaituchoi {
   background-color: #ffffff;
   padding: 22px 26px;
