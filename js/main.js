@@ -15,7 +15,6 @@ const tieuDeLyDo = document.getElementById("tieudelydo");
 const thongBaoDuyet = document.getElementById("thongbaoduyet");
 const noiDungThongBao = document.getElementById("noidungthongbao");
 
-// Cập nhật tỷ lệ duyệt %
 function tinhTyLe() {
   const tong = soDuyet + soTuChoi;
   if (tong > 0) {
@@ -23,7 +22,6 @@ function tinhTyLe() {
   }
 }
 
-// Cập nhật trạng thái ở mục Hoạt động gần đây
 function capNhatHoatDong(id, trangThai) {
   const dong = document.querySelector(`#danhsachhoatdong .dongbaiviet[data-id="${id}"]`);
   if (dong) {
@@ -38,7 +36,6 @@ function capNhatHoatDong(id, trangThai) {
   }
 }
 
-// Bắt sự kiện trên danh sách bài viết cần duyệt
 document.getElementById("danhsachhangdoi").addEventListener("click", (e) => {
   const dong = e.target.closest(".dongbaiviet");
   if (!dong) return;
@@ -46,7 +43,6 @@ document.getElementById("danhsachhangdoi").addEventListener("click", (e) => {
   const id = dong.dataset.id;
   const ten = dong.querySelector(".tenbai").textContent;
 
-  // 1. KHI BẤM DUYỆT (Chuẩn Ảnh 5)
   if (e.target.classList.contains("nutduyet")) {
     dong.remove();
     soChoDuyetElem.textContent = --soCho;
@@ -54,7 +50,6 @@ document.getElementById("danhsachhangdoi").addEventListener("click", (e) => {
     tinhTyLe();
     capNhatHoatDong(id, "duyet");
 
-    // Hiển thị thanh thông báo nổi ở đáy màn hình
     noiDungThongBao.textContent = `Đã phê duyệt và xuất bản: ${ten}`;
     thongBaoDuyet.classList.remove("an");
 
@@ -64,7 +59,6 @@ document.getElementById("danhsachhangdoi").addEventListener("click", (e) => {
     }, 3500);
   }
 
-  // 2. KHI BẤM TỪ CHỐI (Mở modal chuẩn Ảnh 6)
   if (e.target.classList.contains("nuttuchoi")) {
     baiDangChon = { dong, id };
     tieuDeLyDo.textContent = `Lý do từ chối bài "${ten}":`;
@@ -72,7 +66,6 @@ document.getElementById("danhsachhangdoi").addEventListener("click", (e) => {
   }
 });
 
-// Bấm OK trong modal từ chối: Xóa bài khỏi hàng đợi
 document.getElementById("nutok").onclick = () => {
   if (baiDangChon) {
     baiDangChon.dong.remove();
@@ -85,7 +78,6 @@ document.getElementById("nutok").onclick = () => {
   modalTuChoi.classList.add("an");
 };
 
-// Bấm HUỶ trong modal từ chối: Giữ nguyên bài, chỉ đóng modal
 document.getElementById("nuthuy").onclick = () => {
   baiDangChon = null;
   modalTuChoi.classList.add("an");
