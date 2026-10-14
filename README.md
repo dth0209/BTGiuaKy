@@ -13,7 +13,7 @@
 |:---:|---|---|
 | 1 | **Bản thiết kế Canva** | https://canva.link/skex779s41pf0zo
 | 2 | **GitHub Repository** | https://github.com/dth0209/BTGiuaKy
-| 3 | **Video thuyết minh (03 phút)** | https://youtu.be/DU5eyhh97go
+| 3 | **Video thuyết minh (03 phút)** | https://youtu.be/DU5eyhh97go 
 
 > **Quy chuẩn tên video:** `CSE122-GK-SV20-Đặng Trung Hiếu-AdminReviewDashboard`
 
